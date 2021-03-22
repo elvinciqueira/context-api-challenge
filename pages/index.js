@@ -1,10 +1,20 @@
 import styled from 'styled-components'
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
+import Cabecalho from '../src/common/components/Cabecalho'
+import ListaRacas from '../src/common/components/ListaRacas'
+import Raca from '../src/common/components/Raca'
+
+const Container = styled.div`
+  padding: 30px;
+  margin: 0 auto;
 `
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <Container>
+      <Cabecalho />
+      <Raca />
+      <ListaRacas />
+    </Container>
+  )
 }
