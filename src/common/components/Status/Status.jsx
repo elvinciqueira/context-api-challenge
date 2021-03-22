@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import {useRaca} from '../../../hooks/raca'
 
 const Paragraph = styled.p`
-    background-color: $branco;
     padding: 10px;
     display: inline-block;
     font-weight: bold;
